@@ -1,0 +1,284 @@
+SLIDE 1
+MORE THAN READY. 
+LOYOLA READY.
+
+SLIDE 2
+Team 1
+ – 
+End Effector Design
+The Chef-Bot company's goal was to develop a human-assisted robotic pancake production system using the Annin Robotics AR4 arm and custom subsystems for dispensing, flipping, topping application, and plating
+Overview
+Team 4
+ –  Ergonomics & Layout
+Team 2
+ –
+Dispensing System
+Team 3
+ – 
+Motion & Control
+
+SLIDE 3
+
+
+SLIDE 4
+Design and build a human-assisted pancake production system
+Minimize human interaction in the pancake making process
+Integrate the AR4 Annin Robotics arm with custom mechanical subsystems
+Achieve accurate and consistent dispensing for both wet and dry ingredients
+Maintain controlled cooking conditions 
+Demonstrate a reliable and repeatable process
+Goals
+
+SLIDE 5
+Robot Arm Procedure
+Stage 1:
+ 
+​
+Pouring the 
+batter
+Stage 
+2
+:
+ 
+​
+Flipping 
+the 
+Pancake
+Stage 
+3
+:
+ 
+​
+Topping Dispensing
+A servo actuated hopper dispenses an equal amount of batter
+A rotation of the J5 wrist joint flips the pancake
+The robot arm actuates the dispenser to drop the toppings
+
+SLIDE 6
+Human Actions
+Workflow: Human & Automated Actions
+-User Selection
+-Initial filling
+-System Setup
+-Dispensing
+-Cooking 
+-Pancake flip
+Toppings
+-Monitoring
+-Manual Intervention
+-Maintenance
+Human Actions
+Automated Actions
+
+SLIDE 7
+Responsibilities:
+Design and create an end attachment which can perform the necessary requirements
+Design Requirements:
+Design needed to incorporate a cup attachment (blue) to hold the dry toppings
+Had to work around a preexisting spatula which was needed for flipping the pancake
+Needed to be able to be attached to the end of the robot arm  
+Team 1: End Effector
+
+SLIDE 8
+Original Design 
+Final design 
+Team 1: Cup redesign
+Redesigned cup with larger back wall and smaller diameter
+This cup redesign was done because of team communication
+ And lead to a better overall performance of topping dispensing
+
+SLIDE 9
+Used for setting up the robot arm in the Home position
+Allows for the arm to safely "lay down" on the table
+Allows
+ the arm to "slip off" if unpredictable motion occurs
+Has a flexible platform to reduce risk of breaking when the robot arm comes in contact
+Team 1: Stand Design
+
+SLIDE 10
+Team 1: Oil Spray Design
+Servo actuated sprayer
+Adjustable spray angle for fine tuning
+Quick and easy spray bottle replacement
+Was intended for use but through testing it was decided that it was no longer needed
+
+SLIDE 11
+Team 2: Dry Dispenser
+Front View
+Top
+View
+Design is based off Food Dispenser by Makermind on Thingiverse
+Many aspects of the original design had to be edited
+The slider was most challenging due to bending and shear stress
+Required four iterations of testing
+The funnel also needed to be edited
+The funnel length was interfering with the actuation of the toppings
+
+SLIDE 12
+Team 2: Dry Dispenser
+The mounting brackets had to be modified to fit into the aluminum beams
+.STL files allowed quick, easy, and effective design adjustments
+The final dispenser design is a culmination of many different iterations of many different pieces
+
+SLIDE 13
+Batter holder:
+Consumer off the shelf Stainless Steel funnel with plunger to dispense batter
+Servo Functionality:
+Modified to be actuated by a servo
+The servo is controlled the same raspberry pi that controls the user interface
+The servo has a 1 second actuation period which we determined to be the exact time needed to dispense
+A servo was chosen for the dispenser due to fast actuation period
+Team 2: Batter Dispenser
+
+SLIDE 14
+Pancake Data
+Batter mixture 
+300ml pancake mix
+200ml water 
+Time Dispensed
+1 second
+Pancake Diameter
+4in
+Number of pancakes per batch 
+20
+Time to cook entire dispenser
+1 hour 10 minutes
+Griddle Temperature
+375°F
+Team 2: Dispenser Data
+Batter Consistency:
+A 3 to 2 mixture of pancake mix and water
+ 
+Capacity and Yield Testing:
+The maximum yield per refill is 20, 4in pancakes
+Thermal and Endurance Analysis:
+Griddle was held at 375°F for a duration of 70 mins to cook the entire dispenser (3.5 minutes per pancake)
+Griddle Oil/Butter Observation:
+Determined that oil spray is not needed, which reduced maintenance costs and possible points of failure
+
+SLIDE 15
+Initial Point
+Initializing:
+1.) System begins at home position 
+2.) Robot moves to two specific coordinates (up and then down)
+3.) Arm moves to initial position and holds for 40s
+4.) Operator would visually verify accurate contact at initial point
+Home Position 
+Team 3: Initializing
+Further steps:
+Success
+ - system proceeds without intervention
+Failure
+ - manual system reset required restarting from home position
+
+SLIDE 16
+Team 3: Program loops
+Home to Initial Point
+Dispense batter
+Serve Toppings
+Serve Pancake
+Flip Pancake
+General Loop
+Pancake Loop
+The robot movement program utilizes if-statements to control loops of code
+Every cycle begins and ends at an initial point 
+Loops are what allow users to order more than 1 pancake at a time
+
+SLIDE 17
+Griddle Process:
+1.) Arm is positioned near the edge of the pancake
+2.) Arm slides under the pancake 
+3.) Arm lifts pancake and move to left side of griddle
+4.) Arm flips using a 
+controlled wrist rotation
+5.) Arm returns to the right side of the griddle 
+6.) Arm performs a sweeping motion across the griddle 
+7.) Arm lifts the pancake and moves over to plate
+Flipping the Pancake over Griddle
+Team 3: Griddle Flipping
+
+SLIDE 18
+Flipping the Pancake over Plate
+Plate/Toppings Process:
+Arm is positioned on the edge of the plate
+Arm flips pancake 
+Arm returns to edge of plate position
+Flipping Technique:
+Slow rotation of J5 joint, simulating wrist rotation
+Flipping motion works at 15% speed ensuring priority for accuracy over speed
+This flipping technique uses less torque which allows for larger pancakes to be flipped
+Team 3: Plate/Topping Flipping
+
+SLIDE 19
+Objectives:
+Develop a sensing system to detect plating and coordinate the arm’s physical operation
+Provides user control and feedback through the touchscreen User Interface
+Create an efficient layout to reduce preparation time 
+Image of components
+Team 4: User Interface
+
+SLIDE 20
+User Interface: 
+Touchscreen for 
+on-screen controls
+Raspberry Pi:
+Contains the code for processing inputs and sending commands
+Plate sensor: 
+Photoresistor is placed under plate holder for light detection
+Wet Batter Servo:
+Pull on the Batter Dispenser lever, dispensing batter onto the Griddle
+Team 4: System Architecture
+
+SLIDE 21
+Team 4: User Interface Video
+
+SLIDE 22
+
+
+SLIDE 23
+
+
+SLIDE 24
+
+
+SLIDE 25
+
+
+SLIDE 26
+
+
+SLIDE 27
+Role:
+-Confirms plate is present/on top of Photoresistor before initiating the arm
+Key Component:
+- Photoresistor
+Significance:
+- Improves logic timing and reliability
+Cross-Sectional view of plating area
+Picture of Plate and Holder Together
+Picture of Plate and Holder Separated
+Top view of Photoresistor casing
+Angled view of Photoresistor
+Team 4: Plate Sensor Layout
+
+SLIDE 28
+AR4 Robot Arm
+Dry Dispensers & Spill Plate
+Plate & Photoresistor System
+Griddle & Batter Dispenser
+User Interface
+Team 4: Physical Layout
+
+SLIDE 29
+Final Overview
+Our main goal with this project was to produce a reliable semi-automated pancake flipping robot that could produce accurate and repeatable results
+We were able to program, test, and present said pancake flipping robot that was able to semi-autonomously cook, flip, and plate a pancake. We had a multi-system integration that helped aid in that process
+Create a camera feedback system for more accuracy
+Expand the order limit beyond current capacity of 3
+Programming and installing an autonomous reset system
+Set Goals:
+Goals Achieved:
+Next Steps:
+
+SLIDE 30
+Questions?

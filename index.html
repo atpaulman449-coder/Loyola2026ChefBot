@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef Bot | Autonomous Pancake Production System</title>
+  <meta name="description" content="A senior engineering project website for Chef Bot, a semi-automated robotic pancake production system using the AR4 robot arm." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#home" class="logo">Chef Bot</a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#goals">Goals</a>
+        <a href="#role">My Role</a>
+        <a href="#design">Design</a>
+        <a href="#testing">Testing</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Loyola University Maryland Engineering Project</p>
+        <h1>Chef Bot: Semi-Automated Robotic Pancake Production System</h1>
+        <p class="hero-text">
+          Chef Bot was designed to reduce human interaction in the pancake-making process by integrating an Annin Robotics AR4 arm with custom mechanical subsystems for batter dispensing, flipping, topping application, and plating.
+        </p>
+        <div class="hero-actions">
+          <a href="#overview" class="button primary">View Project</a>
+          <a href="#gallery" class="button secondary">See Gallery</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/ppt_01.png" alt="Chef Bot robotic pancake system" class="hero-image">
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Project highlights">
+      <div><strong>15</strong><span>Team Members</span></div>
+      <div><strong>4</strong><span>Specialized Teams</span></div>
+      <div><strong>AR4</strong><span>Robot Arm Platform</span></div>
+      <div><strong>3</strong><span>Main Automated Stages</span></div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Project Overview</p>
+        <h2>Building a robotic system to cook, flip, and plate pancakes</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            The Chef Bot company developed a human-assisted robotic pancake production system using the Annin Robotics AR4 arm and custom subsystems. The system was designed around a repeatable workflow: dispensing batter, cooking the pancake, flipping it on the griddle, applying toppings, and plating the finished pancake.
+          </p>
+          <p>
+            The project required coordination between mechanical design, dispensing, motion control, user interface, and physical layout teams. Each subsystem had to operate reliably while integrating into one complete robotic process.
+          </p>
+        </div>
+        <div class="card">
+          <h3>System Workflow</h3>
+          <ol class="workflow">
+            <li>Operator fills batter and toppings.</li>
+            <li>User selects order through the interface.</li>
+            <li>Batter is dispensed onto the griddle.</li>
+            <li>Robot arm flips the pancake using wrist rotation.</li>
+            <li>Toppings are dispensed.</li>
+            <li>Finished pancake is moved to the plate.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals" class="section section-alt">
+      <div class="section-heading">
+        <p class="eyebrow">Project Goals</p>
+        <h2>Design requirements and objectives</h2>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>Reduce Human Interaction</h3>
+          <p>Minimize manual involvement by automating batter dispensing, cooking motions, flipping, topping application, and plating.</p>
+        </article>
+        <article class="card">
+          <h3>Integrate Subsystems</h3>
+          <p>Combine the AR4 robotic arm with custom mechanical attachments, dispensers, sensors, and a touchscreen interface.</p>
+        </article>
+        <article class="card">
+          <h3>Repeatable Process</h3>
+          <p>Create a reliable sequence that produces accurate and consistent pancake results through controlled motion and testing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="role" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">My Role</p>
+        <h2>Company lead and end effector CAD designer</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            I initiated and proposed the project concept, helped establish technical objectives, and supported the division of the company into four specialized teams. I also served on Team 1, the End Effector Team, where I designed and developed CAD models for the end attachment and related subsystems.
+          </p>
+          <p>
+            As company lead, I coordinated cross-team communication, assigned technical tasks, tracked project milestones, and helped align subsystem development with the overall system goals.
+          </p>
+        </div>
+        <div class="card accent">
+          <h3>Key Contributions</h3>
+          <ul class="check-list">
+            <li>Proposed the original Chef Bot concept.</li>
+            <li>Helped organize the project into four engineering teams.</li>
+            <li>Designed end effector components in SolidWorks.</li>
+            <li>Created a 1:1 CAD model of the spatula for fitment.</li>
+            <li>Designed the oil spray subsystem and calibration stand.</li>
+            <li>Supported testing, integration, and final layout decisions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="section section-alt">
+      <div class="section-heading">
+        <p class="eyebrow">Design</p>
+        <h2>Mechanical subsystems and integration</h2>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>End Effector</h3>
+          <p>The end effector had to attach to the robot arm, work around the spatula required for flipping, and incorporate a cup attachment for dry toppings. The cup was redesigned with a larger back wall and smaller diameter to improve topping dispensing performance.</p>
+        </article>
+        <article class="card">
+          <h3>Oil Spray System</h3>
+          <p>A servo-actuated sprayer was designed with an adjustable spray angle and quick bottle replacement. Testing later showed oil spray was not needed, reducing maintenance and removing a possible point of failure.</p>
+        </article>
+        <article class="card">
+          <h3>Calibration Stand</h3>
+          <p>The stand was created to set up the robot arm in its home position, allow the arm to safely rest on the table, and reduce risk of damage during unpredictable motion.</p>
+        </article>
+        <article class="card">
+          <h3>Physical Layout</h3>
+          <p>The complete layout integrated the AR4 arm, dry dispensers, spill plate, griddle, batter dispenser, plate sensor, and user interface into one coordinated pancake production system.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testing" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Testing and Validation</p>
+        <h2>Improving reliability through iteration</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>01</span>
+          <div>
+            <h3>Dispensing Tests</h3>
+            <p>The batter dispenser used a stainless-steel funnel and servo actuation. A one-second actuation period was determined to dispense the desired batter amount.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <div>
+            <h3>Dry Topping Iterations</h3>
+            <p>The dry dispenser slider required multiple design iterations due to bending and shear stress. The funnel and mounting brackets were also modified to improve actuation and fit.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <div>
+            <h3>Flipping Motion</h3>
+            <p>The robot used slow J5 wrist rotation to flip pancakes, prioritizing accuracy over speed and reducing torque demand during the motion.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>04</span>
+          <div>
+            <h3>System Integration</h3>
+            <p>Final testing connected robot motion, batter dispensing, topping dispensing, plating, and user interface feedback into a semi-automated process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section section-alt">
+      <div class="section-heading">
+        <p class="eyebrow">Results</p>
+        <h2>Final outcome and future improvements</h2>
+      </div>
+      <div class="two-column">
+        <div class="card">
+          <h3>Goals Achieved</h3>
+          <ul class="check-list">
+            <li>Semi-autonomously cooked, flipped, topped, and plated pancakes.</li>
+            <li>Integrated multiple custom mechanical and control subsystems.</li>
+            <li>Demonstrated repeatable robotic motion using the AR4 arm.</li>
+            <li>Created a user-controlled system with touchscreen interaction.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Next Steps</h3>
+          <ul class="check-list">
+            <li>Add camera feedback for improved accuracy.</li>
+            <li>Expand order capacity beyond the current limit.</li>
+            <li>Program and install an autonomous reset system.</li>
+            <li>Continue reliability testing and mechanical refinement.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2>Project visuals from the presentation</h2>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-card"><img src="assets/ppt_01.png" alt="Chef Bot project image 1"><figcaption>Project visual 1</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_02.png" alt="Chef Bot project image 2"><figcaption>Project visual 2</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_03.jpeg" alt="Chef Bot project image 3"><figcaption>Project visual 3</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_04.jpeg" alt="Chef Bot project image 4"><figcaption>Project visual 4</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_05.png" alt="Chef Bot project image 5"><figcaption>Project visual 5</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_06.png" alt="Chef Bot project image 6"><figcaption>Project visual 6</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_07.jpeg" alt="Chef Bot project image 7"><figcaption>Project visual 7</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_08.jpeg" alt="Chef Bot project image 8"><figcaption>Project visual 8</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_09.png" alt="Chef Bot project image 9"><figcaption>Project visual 9</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_10.png" alt="Chef Bot project image 10"><figcaption>Project visual 10</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_11.png" alt="Chef Bot project image 11"><figcaption>Project visual 11</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_12.png" alt="Chef Bot project image 12"><figcaption>Project visual 12</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_13.png" alt="Chef Bot project image 13"><figcaption>Project visual 13</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_14.png" alt="Chef Bot project image 14"><figcaption>Project visual 14</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_15.jpeg" alt="Chef Bot project image 15"><figcaption>Project visual 15</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_16.svg" alt="Chef Bot project image 16"><figcaption>Project visual 16</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_17.svg" alt="Chef Bot project image 17"><figcaption>Project visual 17</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_18.png" alt="Chef Bot project image 18"><figcaption>Project visual 18</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_19.png" alt="Chef Bot project image 19"><figcaption>Project visual 19</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_20.png" alt="Chef Bot project image 20"><figcaption>Project visual 20</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_21.jpeg" alt="Chef Bot project image 21"><figcaption>Project visual 21</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_22.jpeg" alt="Chef Bot project image 22"><figcaption>Project visual 22</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_23.svg" alt="Chef Bot project image 23"><figcaption>Project visual 23</figcaption></figure>
+<figure class="gallery-card"><img src="assets/ppt_24.jpeg" alt="Chef Bot project image 24"><figcaption>Project visual 24</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Chef Bot Project Website | Aidan Paulman | Loyola University Maryland</p>
+    <p class="small">Built as a GitHub Pages-ready static website.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
